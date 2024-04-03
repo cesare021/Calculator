@@ -1,6 +1,7 @@
 //Program Kalkulator
+
 window.onload = function() {
-    document.getElementById('display').value = '';
+    document.getElementById('display').value = "";
 }
 
 const display = document.getElementById("display");
@@ -16,10 +17,10 @@ function clearDisplay(){
 function calculate(){
     try{
         display.value = 'Selamat Sidang Azhar';
-    //     //mengganti simbol persen
-    //     display.value = display.value.replace(/%/g, '*0.01');
-    //     //evaluasi ekspresi math
-    //     display.value = eval(display.value);
+        //mengganti simbol persen
+        // display.value = display.value.replace(/%/g, '*0.01');
+        // //evaluasi ekspresi math
+        // display.value = eval(display.value);
     }
     catch(error){
         display.value = "Error";
