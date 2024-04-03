@@ -1,5 +1,7 @@
 //Program Kalkulator
-
+window.onload = function() {
+    document.getElementById('display').value = '';
+}
 const display = document.getElementById("display");
 
 function appendToDisplay(input){
