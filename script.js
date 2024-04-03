@@ -2,6 +2,7 @@
 window.onload = function() {
     document.getElementById('display').value = '';
 }
+
 const display = document.getElementById("display");
 
 function appendToDisplay(input){
@@ -13,7 +14,8 @@ function clearDisplay(){
 }
 
 function calculate(){
-    // try{
+    try{
+        display.value = 'Selamat Sidang Azhar';
     //     //mengganti simbol persen
     //     display.value = display.value.replace(/%/g, '*0.01');
     //     //evaluasi ekspresi math
@@ -21,8 +23,7 @@ function calculate(){
     // }
     // catch(error){
     //     display.value = "Error";
-    // }
-    display.value = 'Selamat Sidang Azhar';
+    }
 }
 calculate();
 
