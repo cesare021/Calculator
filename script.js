@@ -16,11 +16,10 @@ function clearDisplay(){
 
 function calculate(){
     try{
-        display.value = 'Selamat Sidang Azhar';
         //mengganti simbol persen
-        // display.value = display.value.replace(/%/g, '*0.01');
-        // //evaluasi ekspresi math
-        // display.value = eval(display.value);
+        display.value = display.value.replace(/%/g, '*0.01');
+        //evaluasi ekspresi math
+        display.value = eval(display.value);
     }
     catch(error){
         display.value = "Error";
