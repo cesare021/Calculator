@@ -8,6 +8,8 @@ const display = document.getElementById("display");
 
 function appendToDisplay(input){
     display.value += input;
+    document.getElementById('display').textContent = display.value;
+    document.getElementById('display').scrollLeft = document.getElementById('display').scrollWidth;
 }
 
 function clearDisplay(){
